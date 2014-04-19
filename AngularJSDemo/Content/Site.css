@@ -1,0 +1,121 @@
+﻿/*header styles*/
+
+.header, .footer {
+    background-color: #434343;
+    color: white;
+    /*height: 50px;*/
+}
+
+.header {
+    padding-left: 62px;
+}
+
+    .header h3 {
+        margin-top: 10px;
+        float: left;
+        margin-right: 5px;
+        color:#c48329;        
+    }
+
+    .header a {
+        color: white;
+        text-decoration: none;
+    }
+
+/*footer Styles*/
+
+.footer {
+    text-align: center;
+    color:#c48329;
+}
+
+/*body styles*/
+
+.body {
+    padding-top: 25px;
+    padding-right: 20px;
+}
+
+    .body .thumbnail {
+        margin-bottom: 0px;
+        border: solid #999999 1.5px;
+    }
+
+        .body .thumbnail .caption {
+            /*background-color: #434343;*/
+            background-color: #007fff;
+            color: white;
+        }
+
+        .body .thumbnail a {
+            text-decoration: none;
+            color: white;
+        }
+
+            .body .thumbnail a:hover {
+                color: #333333;
+            }
+
+    .body ul li {
+        margin-bottom: 0px;
+    }
+
+    .body h5 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .body .thumbnail:hover {
+        border: solid #ff6a00 1.5px;
+        cursor: pointer;
+    }
+/*tabs menu styles*/
+.menu > div {
+    background-color: #333333;
+    color: white;
+    /*height: 500px;*/
+}
+
+.menu ul {
+    width: 100%;
+    text-align: center;
+}
+
+    .menu ul li i {
+        color: #999999;
+    }
+
+    .menu ul li a {
+        margin-bottom: 0px;
+    }
+
+.tabs-left > .nav-tabs > li > a, .tabs-right > .nav-tabs > li > a {
+    min-width: 100%;
+}
+
+
+
+.tabs-left > .nav-tabs {
+    border-right: 0px solid #ddd;
+}
+
+.thumbnail {
+    font-weight: bold;
+}
+
+
+/*styles for page detail*/
+
+.details {
+    line-height: 53px;
+    padding-left: 20px;
+}
+
+
+.colors a {
+    height: 30px;
+}
+
+.details ul {
+    margin-bottom: 22px;
+}
