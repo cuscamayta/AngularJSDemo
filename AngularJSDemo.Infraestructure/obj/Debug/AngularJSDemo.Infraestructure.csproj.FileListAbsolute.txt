@@ -1,0 +1,5 @@
+D:\AngularJSDemo\AngularJSDemo\AngularJSDemo.Infraestructure\bin\Debug\AngularJSDemo.Infraestructure.dll
+D:\AngularJSDemo\AngularJSDemo\AngularJSDemo.Infraestructure\bin\Debug\AngularJSDemo.Infraestructure.pdb
+D:\AngularJSDemo\AngularJSDemo\AngularJSDemo.Infraestructure\obj\Debug\AngularJSDemo.Infraestructure.csprojResolveAssemblyReference.cache
+D:\AngularJSDemo\AngularJSDemo\AngularJSDemo.Infraestructure\obj\Debug\AngularJSDemo.Infraestructure.dll
+D:\AngularJSDemo\AngularJSDemo\AngularJSDemo.Infraestructure\obj\Debug\AngularJSDemo.Infraestructure.pdb

@@ -19,3 +19,24 @@ C:\Users\SYSTEMS\Documents\Visual Studio 2012\Projects\AngularJSDemo\AngularJSDe
 C:\Users\SYSTEMS\Documents\Visual Studio 2012\Projects\AngularJSDemo\AngularJSDemo\obj\Debug\AngularJSDemo.csprojResolveAssemblyReference.cache
 C:\Users\SYSTEMS\Documents\Visual Studio 2012\Projects\AngularJSDemo\AngularJSDemo\obj\Debug\AngularJSDemo.dll
 C:\Users\SYSTEMS\Documents\Visual Studio 2012\Projects\AngularJSDemo\AngularJSDemo\obj\Debug\AngularJSDemo.pdb
+D:\AngularJSDemo\AngularJSDemo\AngularJSDemo\bin\AngularJSDemo.dll
+D:\AngularJSDemo\AngularJSDemo\AngularJSDemo\bin\AngularJSDemo.pdb
+D:\AngularJSDemo\AngularJSDemo\AngularJSDemo\bin\EntityFramework.dll
+D:\AngularJSDemo\AngularJSDemo\AngularJSDemo\bin\Microsoft.Web.Infrastructure.dll
+D:\AngularJSDemo\AngularJSDemo\AngularJSDemo\bin\System.Web.Helpers.dll
+D:\AngularJSDemo\AngularJSDemo\AngularJSDemo\bin\System.Web.Mvc.dll
+D:\AngularJSDemo\AngularJSDemo\AngularJSDemo\bin\System.Web.Providers.dll
+D:\AngularJSDemo\AngularJSDemo\AngularJSDemo\bin\System.Web.Razor.dll
+D:\AngularJSDemo\AngularJSDemo\AngularJSDemo\bin\System.Web.WebPages.Deployment.dll
+D:\AngularJSDemo\AngularJSDemo\AngularJSDemo\bin\System.Web.WebPages.dll
+D:\AngularJSDemo\AngularJSDemo\AngularJSDemo\bin\System.Web.WebPages.Razor.dll
+D:\AngularJSDemo\AngularJSDemo\AngularJSDemo\bin\EntityFramework.xml
+D:\AngularJSDemo\AngularJSDemo\AngularJSDemo\bin\System.Web.Helpers.xml
+D:\AngularJSDemo\AngularJSDemo\AngularJSDemo\bin\System.Web.Mvc.xml
+D:\AngularJSDemo\AngularJSDemo\AngularJSDemo\bin\System.Web.Razor.xml
+D:\AngularJSDemo\AngularJSDemo\AngularJSDemo\bin\System.Web.WebPages.xml
+D:\AngularJSDemo\AngularJSDemo\AngularJSDemo\bin\System.Web.WebPages.Deployment.xml
+D:\AngularJSDemo\AngularJSDemo\AngularJSDemo\bin\System.Web.WebPages.Razor.xml
+D:\AngularJSDemo\AngularJSDemo\AngularJSDemo\obj\Debug\AngularJSDemo.csprojResolveAssemblyReference.cache
+D:\AngularJSDemo\AngularJSDemo\AngularJSDemo\obj\Debug\AngularJSDemo.dll
+D:\AngularJSDemo\AngularJSDemo\AngularJSDemo\obj\Debug\AngularJSDemo.pdb

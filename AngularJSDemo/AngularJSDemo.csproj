@@ -97,6 +97,7 @@
   <ItemGroup>
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -214,10 +215,12 @@
     <Content Include="Scripts\app\controllers\productController.js" />
     <Content Include="Scripts\app\controllers\salesController.js" />
     <Content Include="Scripts\app\directives\carruselDirective.js" />
+    <Content Include="Scripts\app\directives\productSlide.js" />
     <Content Include="Scripts\app\services\productService.js" />
     <Content Include="Scripts\app\services\salesService.js" />
     <Content Include="Scripts\app\templates\detail.html" />
     <Content Include="Scripts\app\templates\layout.html" />
+    <Content Include="Scripts\app\templates\listProduct.html" />
     <Content Include="Scripts\app\templates\product.html" />
     <Content Include="Scripts\app\templates\sales.html" />
     <Content Include="Scripts\app\assets\js\jquery-1.7.1.js" />

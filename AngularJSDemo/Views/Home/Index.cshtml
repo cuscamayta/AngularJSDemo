@@ -22,7 +22,8 @@
     <script src="../../Scripts/app/controllers/menuController.js"></script>
     <script src="../../Scripts/app/controllers/detailController.js"></script>
     <script src="../../Scripts/app/controllers/productController.js"></script>
-    <script src="../../Scripts/app/controllers/salesController.js"></script>
+    <script src="../../Scripts/app/controllers/salesController.js"></script>    
+    <script src="../../Scripts/app/services/productService.js"></script>
 
 </head>
 <body ng-app="salesApp">
@@ -38,9 +39,9 @@
             <div class="tabbable tabs-left" ng-controller="menuController">
                 <ul class="nav nav-tabs">
                     <li ><a href="#lA" ><i class="icon-home"></i></a></li>                                                
-                    <li data-ng-class="{'active': getClass('/products')}"><a href="#/products"  ><i class="icon-shopping-cart"></i></a></li>
+                    <li data-ng-class="{'active': getClass('/listProducts')}"><a href="#/products"  ><i class="icon-shopping-cart"></i></a></li>
                     <li data-ng-class="{'active': getClass('/detail')}"><a href="#/detail" ><i class="icon-list-alt"></i></a></li>
-                    <li><a href="#/2A" data-toggle="tab"><i class="icon-download-alt"></i></a></li>
+                    <li data-ng-class="{'active': getClass('/newProduct')}"><a href="#/newProduct" data-toggle="tab"><i class="icon-download-alt"></i></a></li>
                     <li><a href="#2B" data-toggle="tab"><i class="icon-file"></i></a></li>
                     <li><a href="#2C" data-toggle="tab"><i class="icon-barcode"></i></a></li>
                     <li><a href="#3A" data-toggle="tab"><i class="icon-pencil"></i></a></li>
