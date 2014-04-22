@@ -218,7 +218,9 @@
     <Content Include="Scripts\app\directives\productSlide.js" />
     <Content Include="Scripts\app\services\productService.js" />
     <Content Include="Scripts\app\services\salesService.js" />
+    <Content Include="Scripts\app\templates\checkoutProduct.html" />
     <Content Include="Scripts\app\templates\detail.html" />
+    <Content Include="Scripts\app\templates\home.html" />
     <Content Include="Scripts\app\templates\layout.html" />
     <Content Include="Scripts\app\templates\listProduct.html" />
     <Content Include="Scripts\app\templates\product.html" />

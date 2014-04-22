@@ -51,6 +51,15 @@ app.controller('productController', function ($scope) {
 
 });
 
+
+app.controller('homeController', function ($scope) {
+
+});
+
+app.controller('checkoutProduct', function ($scope) {
+
+});
+
 app.filter('startFrom', function () {
     return function (input, start) {
         start = +start; //parse to int
