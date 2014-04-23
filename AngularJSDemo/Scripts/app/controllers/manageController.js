@@ -6,14 +6,7 @@
     function loadProducts() {
       
             $scope.listProduct = productService.getProducts();
-        $scope.product = {
-            Name: '',
-            Model: '',
-            Price: 0,
-            Description: '',
-            path: '',
-            colors: []
-        };
+       
     }
 
     $scope.saveProduct = function() {
@@ -52,12 +45,33 @@
         }
         
     };
-
-
+    $scope.selectColor = function (e, color) {
+        if (e.target.checked)
+           $scope.product.colors.push(angular.copy(color));
+        else {
+            $scope.product.colors.splice(indexof($scope.product.colors,color),1);
+        }
+    };
+    $scope.$watch('product', function (newValue, oldValue) {
+        if (oldValue == null) return;
+        if (oldValue != newValue)
+            $scope.changed = true;
+    },true);
 
     function init() {
+        $scope.product = {
+            Name: '',
+            Model: '',
+            Price: 0,
+            Description: '',
+            path: '',
+            colors: [],
+            Material:''
+        };
+        $scope.changed = false;
         $scope.listProduct = [];
         $scope.productsToDelete = [];
         loadProducts();
+        $scope.colors = ['Rojo', 'Azul', 'Negro', 'Amarrillo', 'Rosa', 'Fucsia'];
     }
 });

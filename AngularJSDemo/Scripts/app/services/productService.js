@@ -41,6 +41,7 @@
         Price: 125,
         Description: 'This is a description for Cover 001',
         path: '/Content/images/funda01.jpg',
+        Material:'Silicona',
         colors: ['red', 'black', 'white']
     },
     {
@@ -50,6 +51,7 @@
         Price: 125,
         Description: 'This is a description for Cover 002',
         path: '/Content/images/funda02.jpg',
+        Material: 'Plastico Sintetico',
         colors: ['red', 'black', 'white', 'blue']
     },
     {
@@ -59,6 +61,7 @@
         Price: 200,
         Description: 'This is a description for Cover 003',
         path: '/Content/images/funda03.jpg',
+        Material: 'Plastico Sintetico',
         colors: ['red', 'black', 'green']
     },
     {
@@ -68,6 +71,7 @@
         Price: 50,
         Description: 'This is a description for Cover 004',
         path: '/Content/images/funda04.jpg',
+        Material: 'Silicona',
         colors: ['red', 'black']
     },
     {
@@ -77,6 +81,7 @@
         Price: 60,
         Description: 'This is a description for Cover 005',
         path: '/Content/images/funda05.jpg',
+        Material: 'Silicona',
         colors: ['red', 'black', 'white', 'green']
     },
     {
@@ -86,6 +91,7 @@
         Price: 125,
         Description: 'This is a description for Cover 006',
         path: '/Content/images/funda06.jpg',
+        Material: 'Plastico Sintetico',
         colors: ['red', 'black', 'white']
     },
     {
@@ -95,6 +101,7 @@
         Price: 125,
         Description: 'This is a description for Cover 007',
         path: '/Content/images/funda07.jpg',
+        Material: 'Plastico Sintetico',
         colors: ['red', 'black']
     },
     {
@@ -104,6 +111,7 @@
         Price: 45,
         Description: 'This is a description for Cover 008',
         path: '/Content/images/funda08.jpg',
+        Material: 'Cuerina',
         colors: ['red', 'black']
     },
     {
@@ -113,6 +121,7 @@
         Price: 62,
         Description: 'This is a description for Cover 009',
         path: '/Content/images/funda09.jpg',
+        Material: 'Cuerina',
         colors: ['red', 'black', 'white']
     },
     {
@@ -122,6 +131,7 @@
         Price: 50,
         Description: 'This is a description for Cover 0010',
         path: '/Content/images/funda10.jpg',
+        Material: 'Silicona',
         colors: ['red', 'black', 'white']
     },
     {
@@ -131,6 +141,7 @@
         Price: 15,
         Description: 'This is a description for Cover 0011',
         path: '/Content/images/funda11.jpg',
+        Material: 'Plastico Sintetico',
         colors: ['red', 'black', 'white']
     },
     {
@@ -140,6 +151,7 @@
         Price: 68,
         Description: 'This is a description for Cover 0012',
         path: '/Content/images/funda12.jpg',
+        Material: 'Cuerina',
         colors: ['red', 'black', 'white']
     },
     {
@@ -149,6 +161,7 @@
         Price: 85,
         Description: 'This is a description for Cover 0013',
         path: '/Content/images/funda13.jpg',
+        Material: 'Cuerina',
         colors: ['red', 'black', 'white']
     },
     {
@@ -158,6 +171,7 @@
         Price: 200,
         Description: 'This is a description for Cover 0014',
         path: '/Content/images/funda14.jpg',
+        Material: 'Cuerina',
         colors: ['red', 'black', 'white']
     },
     {
@@ -167,6 +181,7 @@
         Price: 89,
         Description: 'This is a description for Cover 0015',
         path: '/Content/images/funda15.jpg',
+        Material: 'Plastico Sintetico',
         colors: ['red', 'black', 'white']
     },
     {
@@ -174,8 +189,10 @@
         Name: 'Cover 0016',
         Model: 'Model 0016',
         Price: 125,
+        Material: 'Silicona',
         Description: 'This is a description for Cover 0016',
         path: '/Content/images/funda16.jpg',
+        
         colors: ['red', 'black', 'white']
     },
     {
@@ -185,6 +202,7 @@
         Price: 52,
         Description: 'This is a description for Cover 0017',
         path: '/Content/images/funda17.jpg',
+        Material: 'Cuerina',
         colors: ['red', 'black', 'white']
     },
     {
@@ -192,6 +210,7 @@
         Name: 'Cover 0018',
         Model: 'Model 0018',
         Price: 63,
+        Material: 'Silicona',
         Description: 'This is a description for Cover 0018',
         path: '/Content/images/funda18.jpg',
         colors: ['red', 'black', 'white']
@@ -203,6 +222,7 @@
         Price: 58,
         Description: 'This is a description for Cover 0019',
         path: '/Content/images/funda19.jpg',
+        Material: 'Cuerina',
         colors: ['red', 'black', 'white']
     },
     {
@@ -210,6 +230,7 @@
         Name: 'Cover 0020',
         Model: 'Model 0020',
         Price: 20,
+        Material: 'Silicona',
         Description: 'This is a description for Cover 0020',
         path: '/Content/images/funda20.jpg',
         colors: ['red', 'black', 'white']
@@ -221,6 +242,7 @@
         Price: 78,
         Description: 'This is a description for Cover 0021',
         path: '/Content/images/funda21.jpg',
+        Material: 'Plastico Sintetico',
         colors: ['red', 'black', 'white']
     },
     {
@@ -230,6 +252,7 @@
         Price: 69,
         Description: 'This is a description for Cover 0022',
         path: '/Content/images/funda22.jpg',
+        Material: 'Cuerina',
         colors: ['red', 'black', 'white']
     },
     {
@@ -239,6 +262,7 @@
         Price: 78,
         Description: 'This is a description for Cover 0023',
         path: '/Content/images/funda23.jpg',
+        Material: 'Cuerina',
         colors: ['red', 'black', 'white']
     },
     {
@@ -248,6 +272,7 @@
         Price: 74,
         Description: 'This is a description for Cover 0024',
         path: '/Content/images/funda24.jpg',
+        Material: 'Cuerina',
         colors: ['red', 'black', 'white']
     },
     {
@@ -257,6 +282,7 @@
         Price: 74,
         Description: 'This is a description for Cover 0024',
         path: '/Content/images/funda25.jpg',
+        Material: 'Silicona',
         colors: ['red', 'black', 'white']
     },
     {
@@ -266,6 +292,7 @@
         Price: 74,
         Description: 'This is a description for Cover 0024',
         path: '/Content/images/funda26.jpg',
+        Material: 'Cuerina',
         colors: ['red', 'black', 'white']
     },
     {
@@ -275,6 +302,7 @@
         Price: 74,
         Description: 'This is a description for Cover 0024',
         path: '/Content/images/funda27.jpg',
+        Material: 'Cuerina',
         colors: ['red', 'black', 'white']
     },
     {
@@ -284,6 +312,7 @@
         Price: 74,
         Description: 'This is a description for Cover 0024',
         path: '/Content/images/funda28.jpg',
+        Material: 'Silicona',
         colors: ['red', 'black', 'white']
     },
     {
@@ -293,6 +322,7 @@
         Price: 74,
         Description: 'This is a description for Cover 0024',
         path: '/Content/images/funda29.jpg',
+        Material: 'Silicona',
         colors: ['red', 'black', 'white']
     }
 
