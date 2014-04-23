@@ -1,0 +1,30 @@
+﻿<div class="row-fluid">
+    <div class="controls">
+        <label > Nombre:</label>
+        <input type="text" ng-model="product.Name"/>
+    </div>
+    <div class="controls">
+        <label > Model:</label>
+        <input type="text" ng-model="product.Model"/>
+    </div>
+    <div class="controls">
+        <label > Descripcion:</label>
+        <textarea ng-model="product.Description"/>
+    </div>
+    <div class="controls">
+        <label > Precio:</label>
+        <input type="text" ng-model="product.Price"/>
+    </div>
+     <div class="controls">
+        <label > Colores:</label>
+        <input type="checkbox"  title="Rojo" />
+         <input type="checkbox" />
+         <input type="checkbox" />
+         <input type="checkbox" />
+         <input type="checkbox" />
+    </div>
+  <div class="controls">
+        
+        <button type="button" ng-click="saveProduct()">Guardar</button>
+    </div>
+</div>

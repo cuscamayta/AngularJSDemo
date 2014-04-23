@@ -7,13 +7,15 @@
 
     this.insertProduct = function (product) {
         product.ProductId = products.length + 1;
-        products.push(product);
+        products.push(angular.copy(product));
+        console.log(products);
     };
+    
 
 
     this.deleteProduct = function (productId) {
         for (var i = products.length - 1; i >= 0; i--) {
-            if (prodcuts[i].ProductId === productId) {
+            if (products[i].ProductId === productId) {
                 products.splice(i, 1);
                 break;
             }

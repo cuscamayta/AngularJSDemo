@@ -2,17 +2,16 @@
     <ul class="thumbnails">
         <li class="span6">
             <a href="#" class="thumbnail">
-                <img data-src="holder.js/360x422" alt="360x422" src="/Content/images/funda02.jpg" style="width: 360px; height: 422px;">
+                <img data-src="holder.js/360x422" alt="360x422" src="{{product.path}} " style="width: 360px; height: 422px;">
             </a>
         </li>
         <li class="span6">
             <div class="thumbnail details">
-                <div>Modelo : Samsung Galaxy S3</div>
-                <div>Marca : FundaToys</div>
+                <div>Modelo :{{product.Model}} </div>
                 <div>Disponibilidad: Pedido</div>
-                <div>Precion : 20 $us</div>
+                <div>Precion : {{product.Price}}  $us</div>
                 <div>Material : Plastico Sintetico</div>
-                <div>Tipo : Carcasa / Funda</div>
+               <!-- <div>Tipo : Carcasa / Funda</div>-->
                 <div>Colores :</div>
                 <div>
                     <ul class="thumbnails colors">
@@ -29,6 +28,9 @@
                             <a href="#" class="thumbnail" style="background-color: orange;"></a>
                         </li>
                     </ul>
+                </div>
+                <div class="controls">
+                    <button type="button" class="btn btn-primary" ng-click="addToCar()" > <i class="icon-pluss"> Anadir </i></button>
                 </div>
             </div>
         </li>

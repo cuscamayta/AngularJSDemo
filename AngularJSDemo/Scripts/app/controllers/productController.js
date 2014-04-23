@@ -1,4 +1,4 @@
-﻿app.controller('listProductController', function ($scope, productService) {
+﻿app.controller('listProductController', function ($scope, productService,$location,$rootScope) {
 
     $scope.currentPage = 0;
     $scope.pageSize = 12;
@@ -10,7 +10,10 @@
         updateProducts();
     }
 
-
+    $scope.showDetail = function (product) {
+        $rootScope.productSelected = product;
+        $location.path('/detail');
+    }
     $scope.totalPages = Math.ceil($scope.products.length / $scope.pageSize)
 
     $scope.onPrevius = function () {

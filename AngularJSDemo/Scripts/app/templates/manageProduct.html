@@ -1,0 +1,32 @@
+﻿<div class="row">
+    <div class="span11">
+        <input type="text" ng-model="search"  />
+        <table class="table  ">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Product Name</th>
+                    <th>Description</th>
+                    <th>Model</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="product in listProduct | filter:search">
+                    <td>
+                        <input type="checkbox" ng-click="selectProduct($event,product.ProductId)" /></td>
+                    <td>{{product.Name}}</td>
+                    <td>{{product.Description}}</td>
+                    <td>{{product.Model}}</td>
+                    <td>{{product.Price}}</td>
+                </tr>
+        </table>
+    </div>
+    <div class="span1">
+        <div class="btn-group btn-group-vertical">
+            <button type="button" class="btn btn-primary" ng-click="redirecToAddProduct()"> <i class="icon-plus"></i></button>
+            <button type="button" class="btn btn-primary"  ng-click ="deleteProducts()"><i class="icon-trash"></i></button>
+        </div>
+    </div>
+
+</div>

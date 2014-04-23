@@ -1,9 +1,9 @@
-﻿app.controller('detailController', function ($scope) {
+﻿app.controller('detailController', function ($scope,$rootScope, productService) {
 
 
     init();
 
     function init() {
-        //DO something
+        $scope.product = productService.getProduct($rootScope.productSelected);
     }
 });
