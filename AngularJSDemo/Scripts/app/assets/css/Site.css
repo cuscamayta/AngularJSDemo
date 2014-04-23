@@ -32,8 +32,8 @@
 /*body styles*/
 
 .body {
-    padding-top: 25px;
     padding-right: 20px;
+    padding-top: 15px;
 }
 
     .body .thumbnail {
@@ -195,9 +195,34 @@
     color: rgb(245, 137, 87);
     cursor: pointer !important;
 }
+
 .input-xxlarge-fluid {
-  width: 98%;
-  font-size:18px;
-  line-height:30px;
-  height:30px;
+    width: 98%;
+    font-size: 18px;
+    line-height: 30px;
+    height: 30px;
+}
+
+.input-search {
+    width: 350px;
+    font-size: 13px!important;
+    height: 25px!important;
+    padding-top: 2px!important;
+}
+
+.submenu {
+    background-color: #434343;
+    color: white;
+    margin-bottom: 20px;
+    padding: 5px 10px 5px 10px;
+}
+
+#submenu-right {
+    float: right;
+}
+
+
+.content-scroll {
+    height: 300px;
+    overflow: auto;
 }

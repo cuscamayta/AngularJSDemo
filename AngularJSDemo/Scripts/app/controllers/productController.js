@@ -1,4 +1,4 @@
-﻿app.controller('listProductController', function ($scope, productService,$location,$rootScope) {
+﻿app.controller('listProductController', function ($scope, productService, $location, $rootScope) {
 
     $scope.currentPage = 0;
     $scope.pageSize = 12;
@@ -6,6 +6,7 @@
 
     function init() {
         $scope.products = productService.getProducts();
+        $rootScope.products = $scope.products;
         $scope.currentProducts = $scope.products.slice($scope.currentPage * $scope.pageSize, ($scope.currentPage * $scope.pageSize) + $scope.pageSize);
         updateProducts();
     }
@@ -59,7 +60,10 @@ app.controller('homeController', function ($scope) {
 
 });
 
-app.controller('checkoutProduct', function ($scope) {
+app.controller('checkoutProduct', function ($scope, $rootScope) {
+
+    console.log('list');
+    console.log($rootScope.products);
 
 });
 

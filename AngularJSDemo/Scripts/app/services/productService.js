@@ -10,7 +10,7 @@
         products.push(angular.copy(product));
         console.log(products);
     };
-    
+
 
 
     this.deleteProduct = function (productId) {
@@ -21,7 +21,7 @@
             }
         }
     };
- 
+
 
     this.getProduct = function (productId) {
         for (var i = 0; i < products.length; i++) {
@@ -33,6 +33,21 @@
     };
 
 
+
+    function updateStatus() {
+        $('#btn-update').click(function () {
+            var name = 'Developer name';
+            //DO shomething
+            var countStudents = service.count();
+        });
+
+        $('#btn-udpdate').click(this.btnEventHandler());
+
+        var btnEventHander = function () {
+            var name = 'Developer name';
+            //DO shomething
+        }
+    }
 
     var products = [{
         ProductId: 1,
@@ -298,5 +313,5 @@
 
     ];
 
-    
+
 });
