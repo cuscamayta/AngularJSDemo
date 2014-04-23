@@ -9,38 +9,52 @@
                     <div>
                         <form class="form-horizontal" name="editProductsForm">
                             <div class="control-group" id="lblName">
-                                <label for="newProductName" class="control-label"  >Nombre </label>
+                                <label for="newProductName" class="control-label">Nombre </label>
                                 <div class="controls">
                                     <input id="newProductName" class="input-xxlarge-fluid" type="text" ng-model="product.Name" maxlength="100" size="100" />
                                 </div>
                             </div>
                             <div class="control-group" id="lblModel">
-                                <label for="newProductModel" class="control-label" >Modelo</label>
+                                <label for="newProductModel" class="control-label">Modelo</label>
                                 <div class="controls">
                                     <input id="newProductModel" class="input-xxlarge-fluid" type="text" ng-model="product.Model" />
                                 </div>
                             </div>
                             <div class="control-group" id="div1">
-                                <label for="newProductDescription" class="control-label" >Descripcion</label>
+                                <label for="newProductDescription" class="control-label">Descripcion</label>
                                 <div class="controls">
                                     <textarea id="newProductDescription" class="input-xxlarge-fluid" type="text" ng-model="product.Description" />
                                 </div>
                             </div>
                             <div class="control-group" id="div4">
-                                <label for="newProductPrice" class="control-label" >Precio</label>
+                                <label for="newProductPrice" class="control-label">Precio</label>
                                 <div class="controls">
                                     <input id="newProductPrice" class="input-xxlarge-fluid" type="text" ng-model="product.Price" />
                                 </div>
                             </div>
-                             <div class="control-group" id="div5">
-                                <label for="newProductColor" class="control-label" >Rojo</label>
+                            <div class="control-group" id="div6">
+                                <label for="newProductMaterial" class="control-label">Material</label>
                                 <div class="controls">
-                                    <input id="newProductColor" class="input-xxlarge-fluid" type="checkbox"  />
+                                    <input id="newProductMaterial" class="input-xxlarge-fluid" type="text" ng-model="product.Material" />
                                 </div>
+                            </div>
+
+                            <div class="control-group" id="div5">
+                                  <label for="newProductColor" class="control-label">Seleccione colores</label>
+                                <table id="newProductColor">
+                                    <tbody>
+                                        <tr ng-repeat="color in colors">
+                                            <td>
+                                                <input type="checkbox" ng-click="selectColor($event,color)" /></td>
+                                            <td>{{color}}</td>
+
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                             <div class="controls ">
 
-                                <button id="btnSave" name="btnSave" ng-click="saveProduct() "ng-disabled="editPrivilegeForm.$pristine" type="button" class="btn  pull-right" ng-class="{iconActive: !editPrivilegeForm.$pristine};"><i class="icon-save"></i><span style="margin-left: 5px;">Guardar</span></button>
+                                <button id="btnSave" name="btnSave" ng-click="saveProduct() " ng-disabled="!changed" type="button" class="btn  pull-right" ng-class="{iconActive: changed};"><i class="icon-save"></i><span style="margin-left: 5px;">Guardar</span></button>
                             </div>
                         </form>
                     </div>
