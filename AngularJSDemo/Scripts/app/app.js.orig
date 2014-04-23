@@ -1,0 +1,21 @@
+﻿var app = angular.module('salesApp', []);
+
+app.config(['$routeProvider', function ($routeProvider) {
+
+    $routeProvider
+        .when('/', { templateUrl: '/Scripts/app/templates/listProduct.html',controller:'listProductController' })
+        .when('/products', { templateUrl: '/Scripts/app/templates/listProduct.html', controller: 'listProductController' })
+        .when('/detail', { templateUrl: '/Scripts/app/templates/detail.html', controller: 'detailController' })
+<<<<<<< HEAD
+        .when('/newProduct', { templateUrl: '/Scripts/app/templates/product.html',controller:'productController' })
+        .when('/manageProduct', { templateUrl: '/Scripts/app/templates/manageProduct.html', controller: 'manageController' })
+        .when('/addProduct', { templateUrl: '/Scripts/app/templates/addProduct.html', controller: 'manageController' })
+        
+
+=======
+        .when('/newProduct', { templateUrl: '/Scripts/app/templates/product.html', controller: 'productController' })
+        .when('/home', { templateUrl: '/Scripts/app/templates/home.html', controller: 'homeController' })
+        .when('/checkoutProduct', { templateUrl: '/Scripts/app/templates/checkoutProduct.html', controller: 'checkoutProduct' })
+>>>>>>> 0dd7e8981a5f4b0692ca1914b4d5e4f9254de8a7
+        .otherwise({ rediretTo: '/products' });
+}]);

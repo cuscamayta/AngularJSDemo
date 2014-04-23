@@ -1,32 +1,90 @@
-﻿<div class="row">
-    <div class="span11">
-        <input type="text" ng-model="search"  />
-        <table class="table  ">
-            <thead>
-                <tr>
-                    <th></th>
-                    <th>Product Name</th>
-                    <th>Description</th>
-                    <th>Model</th>
-                    <th>Price</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr ng-repeat="product in listProduct | filter:search">
-                    <td>
-                        <input type="checkbox" ng-click="selectProduct($event,product.ProductId)" /></td>
-                    <td>{{product.Name}}</td>
-                    <td>{{product.Description}}</td>
-                    <td>{{product.Model}}</td>
-                    <td>{{product.Price}}</td>
-                </tr>
-        </table>
+﻿<div>
+    <div id="space1" style="margin-bottom: 7px"></div>
+    <div id="divBtnSearchAction" class="securityListIconSearch" style="width: 97%">
+        <i id="icon-search" class="icon-search"></i>
+        <input id="input-ActionSearch" type="text" class="form-control" placeholder="Search" ng-model="search" style="width: 350px; font-size: 13px!important; height: 18px!important; padding-top: 2px!important" />
+     </div>
+
+    <div id="space2" style="margin-bottom: 5px"></div>
+    <div id="divListActions">
+        <div class="scrollDivResize" hasbutton="true" listTable style="float: left; width: 95%;">
+
+            <table id="tableActionsList" class="table table-striped table-hover table-condensed census"
+                style="height: auto !important;">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Product Name</th>
+                        <th>Description</th>
+                        <th>Model</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="product in listProduct | filter:search ">
+                        <td>
+                            <input type="checkbox" ng-click="selectProduct($event,product)" /></td>
+                        <td>{{product.Name}}</td>
+                        <td>{{product.Description}}</td>
+                        <td>{{product.Model}}</td>
+                        <td>{{product.Price}}</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+        <div style="float: right; width: 2%">
+            <div class="navbar menuoperations">
+                <ul class="nav pull-right">
+                    <li style="margin-bottom: 2px!important;">
+                        <button id="btnAddProduct" type="button" ng-click="redirecToAddProduct()" class="btn btn-primary"><span class="icon-plus"></span></button>
+                    </li>
+                    <li style="margin-bottom: 2px!important;">
+                        <button class="dropdown-toggle btn " data-toggle="dropdown" ng-click="messageConfirmDelete() " ng-disabled="productsToDelete.length <= 0"><i class="icon-trash"></i></button>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
     </div>
-    <div class="span1">
-        <div class="btn-group btn-group-vertical">
-            <button type="button" class="btn btn-primary" ng-click="redirecToAddProduct()"> <i class="icon-plus"></i></button>
-            <button type="button" class="btn btn-primary"  ng-click ="deleteProducts()"><i class="icon-trash"></i></button>
+
+    <div id="modal-deleteProducts" class="modal hide fade" data-backdrop="static">
+        <div class="modal-header">
+
+            <h4 id="H1">Eliminar productos </h4>
+
+        </div>
+        <div class="modal-body">
+            <form class="form-horizontal" name="formProjectAlias">
+                <div class="control-group" id="divExternalSystem">
+                   Se quitaran los siguientes productos
+                </div>
+                <div class="control-group" id="divAliasDescriptor">
+                    <div id="table-actionesToDelete">
+                        <div class="scrollDivResize" style="float: left; width: 97%;">
+                            <table id="table1" class="table table-striped table-hover table-condensed " style="height: auto !important;">
+                                <tbody>
+                                    <tr ng-repeat="product in productsToDelete">
+                                        <td>
+                                        <td>{{product.Name}}</td>
+                                        <td>{{product.Description}}</td>
+                                        <td>{{product.Model}}</td>
+                                        <td>{{product.Price}}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" ng-click="deleteProducts()" data-dismiss="modal" aria-hidden="true">Eliminar</button>
+            <a href="#" class="btn" data-dismiss="modal" > Cancelar</a>
         </div>
     </div>
 
 </div>
+
+

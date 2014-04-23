@@ -6,19 +6,20 @@
     function loadProducts() {
       
             $scope.listProduct = productService.getProducts();
-            $scope.product = {
-                Name: 'Cover 004',
-                Model: 'Model 004',
-                Price: 50,
-                Description: 'This is a description for Cover 004',
-                path: '/Content/images/funda04.jpg',
-                colors: ['red', 'black']
-            }
+        $scope.product = {
+            Name: '',
+            Model: '',
+            Price: 0,
+            Description: '',
+            path: '',
+            colors: []
+        };
     }
 
-    $scope.saveProduct = function () {
+    $scope.saveProduct = function() {
         productService.insertProduct($scope.product);
-    }
+        $location.path('/manageProduct');
+    };
     function indexof(list, id) {
         var indexReturn = -1;
         for (var i = 0; i < list.lenght; i++) {
@@ -28,14 +29,20 @@
         return indexReturn;
     };
 
-    $scope.redirecToAddProduct = function () {
+    $scope.redirecToAddProduct = function() {
         $location.path('/addProduct');
-    }
+    };
+
+    $scope.messageConfirmDelete = function () {
+        console.log($scope.productsToDelete);
+        $("#modal-deleteProducts").modal('show');
+    };
     $scope.deleteProducts = function () {
         angular.forEach($scope.productsToDelete,function (value) {
-            productService.deleteProduct(value);
+            productService.deleteProduct(value.ProductId);
         });
         $scope.listProduct = productService.getProducts();
+        $scope.productsToDelete = [];
     };
     $scope.selectProduct = function (e,productId) {
         if (e.target.checked) {

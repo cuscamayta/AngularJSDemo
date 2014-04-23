@@ -216,6 +216,8 @@
     <Content Include="Scripts\app\controllers\productController.js" />
     <Content Include="Scripts\app\controllers\salesController.js" />
     <Content Include="Scripts\app\directives\carruselDirective.js" />
+    <Content Include="Scripts\app\directives\filtro.js" />
+    <Content Include="Scripts\app\directives\resize.js" />
     <Content Include="Scripts\app\directives\divScroll.js" />
     <Content Include="Scripts\app\directives\productSlide.js" />
     <Content Include="Scripts\app\services\productService.js" />

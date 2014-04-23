@@ -9,7 +9,7 @@
     <title>AngularJS Demo</title>
 
     <link href="../../Scripts/app/assets/libs/bootstrap/css/bootstrap.css" rel="stylesheet" />
-    <link href="../../Scripts/app/assets/libs/bootstrap/css/bootstrapMetro.css" rel="stylesheet" />
+    @*<link href="../../Scripts/app/assets/libs/bootstrap/css/bootstrapMetro.css" rel="stylesheet" />*@
     <link href="../../Scripts/app/assets/libs/bootstrap/css/font-awesome/css/font-awesome.css" rel="stylesheet" />
     <link href="../../Scripts/app/assets/libs/bootstrap/css/bootstrap-responsive.css" rel="stylesheet" />
     <link href="../../Scripts/app/assets/css/Site.css" rel="stylesheet" />
@@ -41,13 +41,12 @@
             <div style="height: 40px; background-color: #434343;">&nbsp;</div>
             <div class="tabbable tabs-left" ng-controller="menuController">
                 <ul class="nav nav-tabs">
-                    <li><a href="#lA"><i class="icon-home"></i></a></li>
-                    <li data-ng-class="{'active': getClass('/listProducts')}"><a href="#/products"><i class="icon-shopping-cart"></i></a></li>
+                 
                     <li data-ng-class="{'active': getClass('/home')}"><a href="#/home" ><i class="icon-home"></i></a></li>                                                
                     <li data-ng-class="{'active': getClass('/products')}"><a href="#/products"  ><i class="icon-barcode"></i></a></li>
                     <li data-ng-class="{'active': getClass('/checkoutProducts')}"><a href="#/checkoutProducts" ><i class="icon-shopping-cart"></i></a></li>
-                    <li data-ng-class="{'active': getClass('/manageProduct')}"><a href="#/namageProduct" data-toggle="tab"><i class="icon-cogs"></i></a></li>
-                    <li data-ng-class="{'active': getClass('/manageProduct')}"><a href="#/manageProduct" data-toggle="tab"><i class="icon-plus"></i></a></li>
+                    <li data-ng-class="{'active': getClass('/manageProduct')}"><a href="#/manageProduct" data-toggle="tab"><i class="icon-cogs"></i></a></li>
+               
                   @*  <li><a href="#2B" data-toggle="tab"><i class="icon-file"></i></a></li>
                     <li><a href="#2C" data-toggle="tab"><i class="icon-barcode"></i></a></li>
                     <li><a href="#3A" data-toggle="tab"><i class="icon-pencil"></i></a></li>
